@@ -157,10 +157,9 @@ class MessageCard extends StatelessWidget {
 
     return Card(
       child: ListTile(
-        textColor: isCurrentUserMessage ? Colors.lightGreenAccent : null,
         title: Text(messageData['text'] is String? messageData['text']:'無効なメッセージ',
           style: TextStyle(
-            color: isCurrentUserMessage ? Colors.white : null,
+            color: isCurrentUserMessage ? Colors.lightGreenAccent : null,
           ),
         ),
       ),
