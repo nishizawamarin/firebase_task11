@@ -55,7 +55,8 @@ class _SignInSuccedState extends State<SignInSucced> {
           .jumpTo(_listScrollController.position.maxScrollExtent);
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar
+        (SnackBar(
         content: const Text('メッセージを送信できませんでした'),
         margin: EdgeInsets.only(bottom: _inputHeight),
       ));
